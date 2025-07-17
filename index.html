@@ -14,15 +14,35 @@
 </html>
 
 <script>
-    const a = prompt("Enter a number:");
-    if (typeof a !== 'number' || isNaN(a)) {
-        console.log("Please enter a valid number.");
-        
-    }
-    for (let i = 1; i <= a; i++) {
-        if (i % 2 === 0) {
-            console.log(i);
+    let firstdigit = prompt("Enter the first digit:").trim();
+    if (firstdigit === null || firstdigit === "" || isNaN(firstdigit) || firstdigit % 2 == 0) {
+        alert("You must enter odd  digit.");
+    } else {
+        console.log(firstdigit);
+        if (Number(firstdigit) > 0) {
 
+            while (firstdigit != 0) {
+                if (firstdigit < 0) {
+                    console.log("Xeta: menfi reqeme dusdun");
+                    break;
+                }
+                if (firstdigit % 7 == 0) {
+                    firstdigit = firstdigit / 2;
+                    console.log(firstdigit);
+
+                } else if (firstdigit % 5 == 0) {
+                    firstdigit = firstdigit - 1;
+                    console.log(firstdigit);
+                } else if (firstdigit % 3 == 0) {
+                    firstdigit = firstdigit - 2;
+                    console.log(firstdigit);
+                } else {
+                    firstdigit = firstdigit - 1;
+                    console.log(firstdigit);
+                }
+            }
+        } else if (firstdigit < 0) {
+            console.log("Xeta: menfi reqeme dusdun");
         }
     }
 </script>
