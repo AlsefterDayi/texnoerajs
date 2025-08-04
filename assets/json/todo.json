@@ -1,0 +1,24 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Kitab oxumaq",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "title": "Email-ləri yoxlamaq",
+      "completed": true
+    },
+    {
+      "id": 3,
+      "title": "Yeni portfolio dizaynını başlamaq",
+      "completed": false
+    },
+    {
+      "id": 4,
+      "title": "JavaScript tapşırıqlarını bitirmək",
+      "completed": true
+    }
+  ]
+}

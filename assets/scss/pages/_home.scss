@@ -1,0 +1,23 @@
+@use "../variables" as *;
+
+.homeContainer {
+  .paragraph {
+    font-size: 24px;
+    color: $primaryColor;
+    font-weight: 700;
+    margin-bottom: 44px;
+  }
+  .btn {
+    display: inline0-block;
+    background-color: $btnbg;
+    padding: 8px 16px;
+    border-radius: 15px;
+    color: $pureWhite;
+    font-size: 24px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+}

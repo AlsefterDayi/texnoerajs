@@ -5,44 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/scss/index.css">
 </head>
 
 <body>
-
+    <div class="homeContainer center">
+        <h1 class="head">Ediləcəklər siyahısı</h1>
+        <p class="paragraph">Siyahını yarat, həyatını dəyiş</p>
+        <a class="btn" href="todo.html">Başlayaq</a>
+    </div>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
-
-<script>
-    let firstdigit = prompt("Enter the first digit:").trim();
-    if (firstdigit === null || firstdigit === "" || isNaN(firstdigit) || firstdigit % 2 == 0) {
-        alert("You must enter odd  digit.");
-    } else {
-        console.log(firstdigit);
-        if (Number(firstdigit) > 0) {
-
-            while (firstdigit != 0) {
-                if (firstdigit < 0) {
-                    console.log("Xeta: menfi reqeme dusdun");
-                    break;
-                }
-                if (firstdigit % 7 == 0) {
-                    firstdigit = firstdigit / 2;
-                    console.log(firstdigit);
-
-                } else if (firstdigit % 5 == 0) {
-                    firstdigit = firstdigit - 1;
-                    console.log(firstdigit);
-                } else if (firstdigit % 3 == 0) {
-                    firstdigit = firstdigit - 2;
-                    console.log(firstdigit);
-                } else {
-                    firstdigit = firstdigit - 1;
-                    console.log(firstdigit);
-                }
-            }
-        } else if (firstdigit < 0) {
-            console.log("Xeta: menfi reqeme dusdun");
-        }
-    }
-</script>

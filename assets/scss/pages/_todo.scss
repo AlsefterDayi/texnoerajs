@@ -1,0 +1,55 @@
+@use "../variables" as *;
+header {
+  margin-bottom: 79px;
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    .headerInfo {
+      display: flex;
+      align-items: center;
+      .imgDiv {
+        width: 74px;
+        height: 74px;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .info {
+        .helo {
+          font-size: 24px;
+          color: $primaryColor;
+          font-weight: 700;
+        }
+        .infoP {
+          font-size: 24px;
+          font-weight: 500;
+          color: $secondaryColor;
+        }
+      }
+    }
+    .headerHead {
+      h2 {
+        font-size: 64px;
+        color: $primaryColor;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+    }
+    .headerDo {
+      a {
+        font-size: 24px;
+        color: $btnbg;
+        font-weight: 700;
+        transition: all 0.3s ease;
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+}
