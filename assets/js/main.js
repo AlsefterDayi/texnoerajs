@@ -9,8 +9,8 @@ const showTable = (rows, cols) => {
     for (let j = 0; j < cols; j++) {
       console.log(i, j);
 
-      if (i - j >= 0) {
-        td = `<td>*</td>`;
+      if (i === 0 || j === 0 || i === rows - 1 || j === cols - 1) {
+        td = `<td class="green"></td>`;
       } else {
         td = `<td></td>`;
       }
@@ -19,4 +19,4 @@ const showTable = (rows, cols) => {
     table.innerHTML += tr.outerHTML;
   }
 };
-showTable(5, 5);
+showTable(8, 8);
