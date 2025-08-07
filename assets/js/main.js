@@ -7,7 +7,9 @@ const showTable = (rows, cols) => {
   for (let i = 0; i < rows; i++) {
     let tr = document.createElement("tr");
     for (let j = 0; j < cols; j++) {
-      if (i % 2 === 0) {
+      console.log(i, j);
+
+      if (i - j >= 0) {
         td = `<td>*</td>`;
       } else {
         td = `<td></td>`;
