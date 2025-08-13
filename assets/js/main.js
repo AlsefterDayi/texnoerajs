@@ -1,4 +1,5 @@
 let table = document.querySelector(".table");
+let firsTime = sessionStorage.getItem("firstTime");
 
 const showTable = (rows, cols) => {
   table.innerHTML = "";
@@ -23,3 +24,12 @@ const showTable = (rows, cols) => {
   }
 };
 showTable(9, 9);
+
+if (!firsTime) {
+  let preloader = document.querySelector(".preloader");
+  preloader.style.display = "flex";
+  sessionStorage.setItem("firstTime", "true");
+} else {
+  document.querySelector(".preloader").remove();
+  document.body.style.overflow = "auto";
+}
